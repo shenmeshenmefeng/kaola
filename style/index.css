@@ -2,7 +2,9 @@
     width: 1100px;
     margin: 0 auto;
 }
-
+html,body {
+    background: #f6f6f6;
+}
 /* 顶部 */
 #top {
     background: black;
@@ -335,4 +337,225 @@
     float: right;
     color: white;
     line-height: 38px;
+}
+/* 版块 */
+.main {
+    margin-top: 10px;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 0 40px 0;
+}
+.section .title h2{
+    font-size: 22px;
+    line-height: 60px;
+    font-weight: bold;
+    float: left;
+}
+.section .title span {
+    color: #A5A5A5;
+    margin-left: 20px;
+    float: left;
+    margin-top: 25px;
+}
+.section .title a {
+    color: #606060;
+    margin-left: 20px;
+    float: left;
+    margin-top: 25px;
+}
+.section .title i {
+    cursor: pointer;
+    float: right;
+    color: #9d9d9d;
+    margin-top: 25px;
+}
+.section .comm .leftcom {
+    background: url(../image/main.jpg);
+    height: 540px;
+    width: 330px;
+    position: relative;
+    float: left;
+}
+.section .comm .leftcom span {
+    width: 80px;
+    height: 40px;
+    border: 2px solid #D8DADF;
+    border-radius: 20px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background: white;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+.section .comm .leftcom div {
+    bottom: 25px;
+    position: absolute;
+    left: 25px;
+}
+.section .comm .middlecom {
+    border-top: 1px solid #e8e8e8;
+    background: white;
+    text-align: center;
+    height: 540px;
+    box-sizing: border-box;
+}
+.section .comm .middlecom span{
+    float: left;
+    width: 275px;
+    height: 270px;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8 ;
+    box-sizing: border-box;
+}
+.section .comm .middlecom h3 {
+    margin-top: 25px;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.section .comm .middlecom i {
+    font-size: 12px;
+}
+
+.section .brand {
+    margin-top: 20px;
+    border: 1px solid #eaeaea;
+    background: white;
+}
+.section .brand h2 {
+    line-height: 48px;
+    font-size: 15px;
+    text-indent: 1em;
+}
+.section .brand span {
+    border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    float: left;
+    width: 219px;
+    height: 167px;
+    text-align: center;
+    line-height: 167px;
+}
+.section .brand span:last-child {
+    border-right: 0;
+    width: 218px;
+}
+.rightnav {
+    width: 64px;
+    height: 245px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    position: absolute;
+    right: 50%;
+    margin-right: -635px;
+    top:690px;
+    background: white;
+}
+.leftnav {
+    width: 100px;
+    height: 475px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    position: absolute;
+    top: 690px;
+    left: 50%;
+    margin-left: -670px;
+    background: white;
+}
+.rightnav li {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ebebeb;
+}
+.rightnav li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.rightnav li:hover a {
+    color: red;
+    background: #f6f6f6;
+}
+.leftnav div {
+    width: 98px;
+    height: 49px;
+    background-image: url(../image/left.jpg);
+    background-size: 100px 50px;
+    background-position: center center;
+}
+.leftnav h3 {
+    height: 50px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    text-indent: 9px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.leftnav ul {
+    padding: 10px 0;
+}
+.leftnav ul li {
+    height: 32px;
+    line-height: 32px;
+    text-indent: 9px;
+}
+.gray {
+    background: #f0f0f0;
+    height: 80px;
+    margin-top: 50px;
+    border-bottom: 1px solid #ebebeb;
+}
+#bottom {
+    background: white;
+}
+.bottom ul{
+    border-bottom: 1px solid #ebebeb;
+    padding: 49px 0;
+    height: 48px;
+}
+.bottom ul li {
+    float: left;
+    height: 48px;
+    width: 233px;
+    margin-right: 40px;
+}
+.bottom ul li span {
+    float: left;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 48px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 12px;
+}
+.bottom ul li p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+#bottom div {
+    padding: 45px 0 70px 0;
+}
+#bottom div dl {
+    float: left;
+}
+#bottom div a {
+    float: left;
+    background: url(../image/logo.png);
+    width: 220px;
+    height: 50px;
+}
+#copyright {
+    background: #333333;
+    text-align: center;
+    color: #c3c3c3;
+    padding: 20px 0  40px 0;
+}
+#copyright p {
+    line-height: 18px;
 }
