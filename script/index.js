@@ -14,7 +14,7 @@ $('.exit').on('click',function(){
 })
 window.onscroll = function () {
     var scrollH = $(window).scrollTop()
-    if (scrollH>= 115) {
+    if (scrollH>= 65) {
         $('#header').css('position','fixed')
         $('#header').css('top','0')
         $('#header').css('z-index','999')
@@ -28,11 +28,11 @@ window.onscroll = function () {
         $('.header>span').css('display','none')
         $('#nav').css('margin-top','100px')
     } 
-    if (scrollH<115) {
+    if (scrollH<65) {
         $('#header').css('position','')
         $('#nav').css('margin-top','0')
         $('#header').css('box-shadow','0 0 0 0')
-        $('#header').css('height','100px')
+        $('#header').css('height','105px')
         $('.header>a').css('height','68px')
         $('.header>a').css('margin-top','20px')
         $('.header>form').css('margin-top','30px')
