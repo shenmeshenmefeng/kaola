@@ -23,7 +23,6 @@ task('data',async ()=>{
   .pipe(load.rev())
   .pipe(dest('./dist/data'))
   .pipe(load.rev.manifest())
-  .pipe(dest('./dist/data'))
 })
 
 // 处理js
@@ -57,4 +56,4 @@ task('html',async ()=>{
 })
 
 // 打包（生产环境）
-task('build',series('delDist','style','script','image','html'))
+task('build',series('delDist','style','script','image','html','data'))
