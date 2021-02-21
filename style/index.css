@@ -97,6 +97,14 @@ html,body {
     box-sizing: border-box;
     display: none;
 }
+.user {
+    display: none;
+    cursor: pointer;
+}
+.exit {
+    display: none;
+    cursor: pointer;
+}
 .ewm img {
     width: 100px;
     height: 100px;

@@ -1,0 +1,229 @@
+#header {
+    height: 100px;
+    border-bottom: 1px solid #e8e8ea;
+}
+.header {
+    width: 1000px;
+    margin: 0 auto;
+}
+.header a {
+    width: 330px;
+    height: 65px;
+    float: left;
+    margin-top: 20px;
+    background: url(../image/login-logo.png) no-repeat left;
+}
+.header>img {
+    float: right;
+    margin-right: 40px;
+}
+#container {
+    background: #f8f8f8;
+    height: 600px;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.container>img {
+    margin-top: 200px;
+    float: left;
+    margin-left: 10px;
+}
+.login {
+    float: right;
+    margin-top: 120px;
+    width: 350px;
+    border: 1px solid #e8e8ea;
+    background: white;
+    margin-right: 40px;
+    position: relative;
+}
+.ewm {
+    position: relative;
+    /* display: none; */
+    padding-bottom: 30px;
+}
+.ewm h2 {
+    text-align: center;
+    padding: 33px 0 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.ewm i {
+    margin: 0 auto;
+    font-size: 12px;
+    background: #fffbe6;
+    color: #f99742;
+    border-radius: 7.5px;
+    padding: 0 7.5px;
+    text-align: center;
+    margin-left: 60px;
+}
+.ewm span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: url(../image/login-ewm.png);
+    width: 64px;
+    height: 64px;
+}
+.ewm >div {
+    box-shadow: 0 0 8px #dddddd;
+    margin: 25px auto 10px;
+    display: block;
+    width: 130px;
+    height: 130px;
+    background-image: url(../image/loginewm.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+}
+.ewm strong {
+    margin: 0 auto;
+    text-align: center;
+}
+.phone {
+    position: relative;
+    display: none;
+}
+.phone h2 {
+    text-align: center;
+    padding: 33px 0 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.phone span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: url(../image/login-phone.png);
+    width: 64px;
+    height: 64px;
+}
+.phone form {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+    padding: 25px 0 0 0;
+}
+.phone form a{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#login-id {
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #d5d5d5;
+    border-radius: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+#login-code {
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #d5d5d5;
+    border-radius: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.phone button {
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    width: 100%;
+    background: red;
+    color: white;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 18px;
+    outline: none;
+}
+.phone p {
+    text-align: center;
+    color: #999999;
+    margin-bottom: 30px;
+}
+.login ul {
+    width: 100%;
+    border-top: 1px solid #e8e8ea ; 
+    height: 42px;
+    padding: 10px 0px 10px 95px;
+    box-sizing: border-box;
+}
+.login ul li {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    float: left;
+}
+.login ul .taobao a{
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    background-image: url(../image/login-form.png);
+    background-position: 0px 0px;
+    background-size: 182px 22px;
+}
+.login ul .zhifubao a{
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    background-image: url(../image/login-form.png);
+    background-position: -32px 0px;
+    background-size: 182px 22px;
+}
+.login ul .weixin a{
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    background-image: url(../image/login-form.png);
+    background-position: -64px 0px;
+    background-size: 182px 22px;
+}
+.login ul .weibo a{
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    background-image: url(../image/login-form.png);
+    background-position: -96px 0px;
+    background-size: 182px 22px;
+}
+.login ul .youxiang a{
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    background-image: url(../image/login-form.png);
+    background-position: -160px 0px;
+    background-size: 182px 22px;
+}
+#copyright {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+#copyright p {
+    line-height: 25px;
+    color: #666666;
+}
+#copyright div img:nth-of-type(1) {
+    width: 80px;
+    height: 30px;
+}
+#copyright div img:nth-of-type(2) {
+    width: 30px;
+    height: 30px;
+}
