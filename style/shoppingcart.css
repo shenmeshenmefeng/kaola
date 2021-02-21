@@ -1,0 +1,386 @@
+.content {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  background: white;
+}
+
+/* 顶部 */
+#top {
+  background: black;
+  height: 30px;
+}
+
+.user {
+  display: none;
+  cursor: pointer;
+}
+.exit {
+  display: none;
+  cursor: pointer;
+}
+.top ul {
+  float: left;
+}
+
+.top ol {
+  float: right;
+}
+
+.top ol>li {
+  padding: 0 20px;
+  float: left;
+  color: #999999;
+  line-height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.top>ul>li {
+  float: left;
+  color: #999999;
+  line-height: 28px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.top li>a:hover {
+  color: white;
+}
+
+.top ol>li:nth-of-type(3):hover,
+.top ol>li:nth-of-type(4):hover,
+.top ol>li:nth-of-type(5):hover,
+.top ol>li:nth-of-type(6):hover,
+.top ol>li:nth-of-type(7):hover {
+  background: white;
+  color: red;
+}
+
+.top ol>li:nth-of-type(3):hover span,
+.top ol>li:nth-of-type(4):hover span,
+.top ol>li:nth-of-type(5):hover span,
+.top ol>li:nth-of-type(6):hover span,
+.top ol>li:nth-of-type(7):hover span {
+  border-color: red transparent transparent transparent;
+  transform: rotate(180deg);
+}
+
+.top ol>li:nth-of-type(3):hover ul,
+.top ol>li:nth-of-type(4):hover ul,
+.top ol>li:nth-of-type(5):hover ul,
+.top ol>li:nth-of-type(6):hover ul,
+.top ol>li:nth-of-type(7):hover ul {
+  display: block;
+}
+
+.top span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid;
+  border-color: #999999 transparent transparent;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  transition: all .25s;
+  transform-origin: 50% 25%;
+}
+
+.top ol li ul {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 10px 15px;
+  display: none;
+  z-index: 666;
+  background: white;
+}
+
+.top ol li ul li {
+  float: left;
+  line-height: 30px;
+  width: 95px;
+  color: #999999;
+  cursor: pointer;
+}
+
+.top ol li ul li:hover {
+  color: red;
+}
+
+.borderb {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.top ul li:nth-of-type(4):hover .ewm,
+.top ul li:nth-of-type(4):hover .jiujiu {
+  display: block;
+}
+
+.top ul li .ewm {
+  width: 125px;
+  height: 165px;
+  background: white;
+  border: 1px solid #eeeeee;
+  position: absolute;
+  top: 43px;
+  left: -36px;
+  z-index: 555;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.ewm img {
+  width: 100px;
+  height: 100px;
+}
+
+.ewm p {
+  color: black;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 13px;
+  font-size: 14px;
+}
+
+.top ul li .jiujiu {
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  position: absolute;
+  top: 38px;
+  left: 21px;
+  z-index: 666;
+  background: white;
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* 头部 */
+#shopping_head {
+  width: 1090px;
+  height: 100px;
+  margin: auto;
+  background: url(../image/logo.png) no-repeat left center;
+}
+
+/* 主题 */
+#cart_body {
+  width: 1090px;
+  height: 218px;
+  margin: auto;
+  position: relative;
+  background: url(../image/cart.jpg) no-repeat 336px 91px;
+}
+
+.cart_none {
+  position: absolute;
+  left: 396px;
+  top: 90px;
+  font-size: 16px;
+  /* display: none; */
+}
+
+.cart_none a {
+  color: red;
+}
+
+/* 推荐 */
+#new_title {
+  width: 1090px;
+  margin: auto;
+  height: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 0;
+}
+#new_title span {
+  padding-left: 12px;
+  font-size: 14px;
+  color: #999;
+}
+#new_list {
+  width: 1090px;
+  margin: auto;
+}
+.goods {
+  width: 1105px;
+  height: 321px;
+}
+/* .goods>div {
+  margin-left: -15px;
+} */
+.good {
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 204px;
+  height: 304px;
+  border: 1px solid #eaeaea;
+}
+/* 底部 */
+#bottom {
+  background: white;
+}
+
+.bottom ul {
+  border-bottom: 1px solid #ebebeb;
+  padding: 49px 0;
+  height: 48px;
+}
+
+.bottom ul li {
+  float: left;
+  height: 48px;
+  width: 233px;
+  margin-right: 40px;
+}
+
+.bottom ul li span {
+  float: left;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-right: 12px;
+}
+
+.bottom ul li p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+#bottom>div {
+  padding: 45px 0 70px 0;
+}
+
+#bottom>div>div {
+  padding: 45px 0 0 0;
+}
+
+#bottom div dl {
+  float: left;
+  margin-right: 30px;
+}
+
+#bottom div a {
+  float: left;
+  background: url(../image/logo.png);
+  width: 220px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.bottom>div dl dt {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.bottom>div dl dd {
+  margin-bottom: 15px;
+}
+
+#copyright {
+  background: #333333;
+  text-align: center;
+  color: #c3c3c3;
+  padding: 20px 0 40px 0;
+}
+
+#copyright p {
+  line-height: 18px;
+}
+
+/* 主体 */
+.head{
+  overflow: hidden;
+  background-color: #eee;
+  width: 900px;
+  margin: 30px auto 10px;
+  line-height: 40px;
+  padding-left: 30px;
+}
+.head input{
+  float: left;
+  margin-top: 15px;
+}
+.head span:nth-of-type(1){
+  float: left;
+}
+.head span:nth-of-type(2){
+  float: left;
+  margin-left: 70px;
+}
+.head span:nth-of-type(3){
+  float: left;
+  margin-left: 330px;
+}
+.head span:nth-of-type(4){
+  float: left;
+  margin-left: 90px;
+}
+.head span:nth-of-type(5){
+  float: left;
+  margin-left: 120px;
+}
+.list{
+  width: 1090px;
+  height: 300px;
+  margin-top: 5px;
+  width: 900px;
+  margin: 0 auto;
+}
+.list li{
+  padding: 10px 15px;
+  background-color: lightcyan;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.list li input{
+  float: left;
+}
+.list li img{
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+.list li h3{
+  float: left;
+  width: 300px;
+  margin: 10px 0 0 15px;
+}
+.list li p{
+  float: left;
+  width: 100px;
+  text-align: center;
+  margin-left: 50px;
+}
+.list li span{
+  float: left;
+  width: 20px;
+  text-align: center;
+  margin-left: 60px;
+}
+.list li em{
+  float: left;
+  width: 50px;
+  text-align: center;
+  margin-left: 120px;
+  cursor: pointer;
+}
