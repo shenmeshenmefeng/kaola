@@ -18,6 +18,14 @@ task('style',async ()=>{
   .pipe(dest('./rev/css'))//将记录哈希值的json文件保存rev目录
 })
 
+task('data',async ()=>{
+  src('./data/*.json')
+  .pipe(load.rev())
+  .pipe(dest('./dist/data'))
+  .pipe(load.rev.manifest())
+  .pipe(dest('./dist/data'))
+})
+
 // 处理js
 task('script',async ()=>{
   src('./script/*.js')
