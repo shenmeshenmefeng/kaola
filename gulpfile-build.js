@@ -20,7 +20,6 @@ task('style',async ()=>{
 
 task('data',async ()=>{
   src('./data/*.json')
-  .pipe(load.rev())
   .pipe(dest('./dist/data'))
   .pipe(load.rev.manifest())
 })

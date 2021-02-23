@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>商品列表</title>
+<link rel="icon" href="../image/ico.ico" sizes="16x16">
 <link rel="stylesheet" href="../style/reset.css">
 <link rel="stylesheet" href="../style/goodsList.css">
 </head>
@@ -74,7 +75,7 @@
   </div>
 <div class="header">
   <h1>商品列表页</h1>
-  <a href="../views/shoppingcart.html">我的购物车</a>
+  <a href="./shoppingcart.html">我的购物车</a>
 </div>
 <div class="wrap">
   <div class="main">
@@ -161,9 +162,6 @@
 </div>
 <script>
   function dataJson(data) {
-      console.log(data);
-      console.log(data.data[0].imgurl);
-      // // console.log(data.data.length);
       var len = data.data.length;
       var domStr = '';
       for(var i = 0; i < len; i++) {

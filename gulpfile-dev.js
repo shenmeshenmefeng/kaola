@@ -29,6 +29,11 @@ task('script',async ()=>{
   .pipe(load.connect.reload())
 })
 
+task('data',async ()=>{
+  src('./data/*.json')
+  .pipe(dest('./dist/data'))
+  .pipe(load.rev.manifest())
+})
 // 处理img
 task('image',async ()=>{
   src('./image/*.*')
@@ -53,7 +58,7 @@ task('watch',async ()=>{
 })
 
 // 打包（开发环境）
-task('dev',series('delDist','html','style','script','image'))
+task('dev',series('delDist','html','style','script','image','data'))
 
 // 启动项目
 task('start',series('dev','reload','watch'))
