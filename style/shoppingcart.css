@@ -169,7 +169,13 @@ body {
   width: 1090px;
   height: 100px;
   margin: auto;
+}
+.shopping_head {
   background: url(../image/logo.png) no-repeat left center;
+  display: block;
+  width: 220px;
+  height: 68px;
+  margin-top: 20px;
 }
 
 /* 主题 */
@@ -227,6 +233,28 @@ body {
   width: 204px;
   height: 304px;
   border: 1px solid #eaeaea;
+}
+.good img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.good a {
+  display: block;
+  color: black;
+  padding: 10px;
+}
+.good span {
+  color: red;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-indent: 1em;
+}
+.good i {
+  color: #999;
+  text-indent: 1em;
+  display: block;
 }
 /* 底部 */
 #bottom {
@@ -312,7 +340,7 @@ body {
   overflow: hidden;
   background-color: #eee;
   width: 900px;
-  margin: 30px auto 10px;
+  margin: 0 auto 10px;
   line-height: 40px;
   padding-left: 30px;
 }

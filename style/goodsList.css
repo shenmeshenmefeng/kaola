@@ -5,7 +5,7 @@
 
 html,
 body {
-  background: white;
+  background: #FF867C;
 }
 
 /* 顶部 */
@@ -164,44 +164,212 @@ body {
   display: none;
 }
 /* 头部 */
-.header{
-  height: 80px;
-  background: #eee;
+#header {
+  height: 105px;
+  width: 100%;
+  background:white;
+}
+.header>a {  
+  height: 68px;
+  width: 220px;
+  background: url(../image/logo.png) no-repeat left center;
+  text-indent: -999px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 110px;
+}
+.header form {
+  float: left;
+  width: 500px;
+  height: 36px;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-top: 35px;
+  background: white;
+}
+.header form input:nth-of-type(1) {
+  width: 440px;
+  border: 0;
+  float: left;
+  border-radius: 20px;
+  height: 36px;
+  text-indent: 35px;
+}
+.header form input:nth-of-type(2) {
+  width: 60px;
+  border: 0;
+  float: left;
+  border-radius: 20px;
+  height: 36px;
+  background: red url(../image/search.png) no-repeat center;
+}
+.header span {
+  float: left;
+  margin-top: 35px;
+  border: 2px solid red;
+  border-radius: 20px;
+  height: 36px;
+  width: 110px;
+  background: white;
+  margin-left: 50px;
+  text-align: center;
+  line-height: 36px;
+}
+.header span a{
+  border-radius: 20px;
+  height: 36px;
+  width: 110px;
+  display: block;
+}
+#nav {
+  height: 40px;
+  background: white;
+}
+.nav {
   position: relative;
 }
-.header h1{
-  text-align: center;
-  line-height: 80px;
-  font-size: 20px;
-}
-.header a{
+.nav dl {
   position: absolute;
-  right: 30px;
-  top: 10px;
-  padding: 4px 10px;
-  font-size: 16px;
-  color: #666;
-  border: 1px solid #ccc;
+  top: 0;
+  left: 0;
+  z-index: 55;
 }
-.header a:hover{
+.nav dl dt {
+  width: 164px;
+  height: 39px;
+  background: red;
+  color: white;
+  border-bottom: 1px solid #FF5160;
+  text-align: center;
+  line-height: 39px;
+  font-size: 14px;
+}
+.nav dl dd {
+  width: 164px;
+  height: 39px;
+  background: red;
+  position: relative;
+  display: none;
+}
+.nav dl dd a {
+  color: white;
+  font-size: 14px;
+  display: block;
+  width: 160px;
+  text-align: center;
+  line-height: 39px;
+  height: 38px;
+  margin-left: 2px;
+  border-bottom: 1px solid #FF5160;
+}
+.nav ul {
+  margin-left: 165px;
+}
+.nav ul li {
+  float: left;
+  width: 99px;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+}
+.nav ul li a {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+.nav ul li:nth-of-type(1) a {
+  color: red;
+}
+.nav dl dd:hover a{
+  color: red;
+  background: white;
+}
+.nav dl dd:hover div {
+  display: block;
+}
+.nav dl dd>div {
+  width: 930px;
+  height: 465px;
   border: 1px solid red;
+  position: absolute;
+  left: 165px;
+  top: 0;
+  background: white;
+  display: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.nav dl dd>div>div {
+  float: left;
+}
+.nav dl dd>div .right {
+  width: 240px;
+  height: 100%;
+  background: #f6f6f6;
+  float: right;
+  box-sizing: border-box;
+  padding: 13px;
+  margin-right: -10px;
+}
+.nav dl dd>div .right img {
+  width: 105px;
+  height: 105px;
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+.nav dl dd>div .right img:last-child {
+  width: 200px;
+  height: 90px;
+  border: 0;
+  margin-top: 5px;
+}
+.nav dl dd .left .toplist div,.nav dl dd .left .middlelist div {
+  width: 330px;
+  float: left;
+}
+.nav dl dd .left .bottomlist {
+  width: 640px;
+}
+.nav dl dd .left div h2 {
+  line-height: 35px;
+  border-bottom: 1px solid #EAEAEA;
+  font-size: 14px;
+  font-weight: 700;
+  text-indent: 3px;
+}
+.nav dl dd .left .toplist div div,.nav dl dd .left .middlelist div div {
+  width: 270px;
+  margin-left: 5px;
+  padding: 8px 0;
+}
+.left span {
+  line-height: 35px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #666666;
+}
+.left .red {
   color: red;
 }
 .wrap{
   width: 1200px;
   margin: 0 auto 50px;
   overflow: hidden;
+  background: rgb(240, 240, 240);
 }
 .main{
-  margin-top: 30px;
+  padding: 10px;
   width: 1300px;
 }
 .goods{
   float: left;
   width: 220px;
-  margin: 0 25px 25px 0;
+  margin: 0 20px 10px 0;
   box-sizing: border-box;
-  border: 1px solid #fff;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .goods:hover{
   border: 1px solid red;
@@ -218,6 +386,7 @@ body {
 }
 .goods h3{
   font-size: 14px;
+  padding: 5px;
 }
 .goods div{
   font-size: 16px;
@@ -225,7 +394,7 @@ body {
   padding: 4px 8px;
   border: 1px solid #eee;
   float: left;
-  margin: 10px 0;
+  margin: 10px 0 10px 55px;
   cursor: pointer;
 }
 .goods div:hover{
