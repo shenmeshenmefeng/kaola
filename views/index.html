@@ -9,6 +9,7 @@
   <!-- <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../style/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -90,7 +91,7 @@
     <div class="nav content clearfix">
       <dl>
         <dt>所有分类</dt>
-        <dd><a href="./goodslist.html">美容彩妆</a>
+        <dd><a href="./goodslist.html">美容彩妆<span class="zhilu">←列表页点这里</span></a>
           <div>
             <div class="left">
               <div class="toplist clearfix">
@@ -220,7 +221,7 @@
           <a href="#">安德玛</a>
           <i>更多好货></i>
         </div>
-        <div class="comm">
+        <div class="comm clearfix swiper-container">
           <div class="leftcom">
             <div>
               <span>男运动鞋</span>
@@ -253,7 +254,12 @@
               <img src="../image/comm1.jpg" alt="">
             </span>
           </div>
-          <div class="rightcom"></div>
+          <div class="rightcom swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
         <div class="brand clearfix">
           <h2>热卖品牌</h2>
@@ -471,10 +477,33 @@
       网络文化经营许可证：浙网文（2020）4340-180号 浙江省网络食品销售第三方平台提供者备案：浙网食A33010006 网络第三方平台规范进口冷链食品承诺函<br>
       浙公网安备 33010802002216号 互联网药品信息服务资格证书编号（浙）-2017-0027 浙ICP备16011229号-6 自营经营者信息</p>
   </div>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // // 如果需要前进后退按钮
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    
+    // // 如果需要滚动条
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  })        
+  </script>
   <!-- <script src="../node_modules/swiper/swiper-bundle.min.js"></script> -->
   <script src="../script/jquery.js"></script>
   <script src="../script/utils.js"></script>
   <script src="../script/index.js"></script>
+  <script src="../script/swiper-bundle.min.js"></script>
 </body>
 
 </html>

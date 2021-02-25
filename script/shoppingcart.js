@@ -64,3 +64,34 @@ $('.exit').on('click',function(){
   window.location.reload()
 })
 
+fn = function(event,eeee){
+  console.log($('.check')[0].checked);
+  console.log(event.target.className);
+  if (event.target.className == 'check' || eeee.className == 'check') {
+    if($('.check')[0].checked == true) {
+    for (var i = 0; i < $('.checked').length; i++) {
+      $('.checked')[i].checked = true
+  }
+  }
+  if ($('.check')[0].checked  == false ) {
+    for (var i = 0; i <$('.checked').length; i++) {
+      $('.checked')[i].checked = false
+    }
+  }
+  
+}}
+
+$('.head').click(fn)
+
+$('.pay').on('click',function(event) {
+  if (event.target.className == 'check' ) {
+    if($('.check')[1].checked == true) {
+      $('.check')[0].checked =true
+    }
+    if ($('.check')[1].checked == false) {
+      $('.check')[0].checked =false
+    }
+  }
+  eeee = event.target
+  $('.head').trigger("click",eeee)
+})

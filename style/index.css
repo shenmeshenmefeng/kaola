@@ -419,6 +419,8 @@ html,body {
     text-align: center;
     height: 540px;
     box-sizing: border-box;
+    float: left;
+    width: 550px;
 }
 .section .comm .middlecom span{
     float: left;
@@ -436,7 +438,15 @@ html,body {
 .section .comm .middlecom i {
     font-size: 12px;
 }
-
+.section .comm .rightcom {
+    float: left;
+    width: 220px;
+    height: 541px;
+    background: white;
+    border:1px solid #e8e8e8;
+    box-sizing: border-box;
+    border-left: 0;
+}
 .section .brand {
     margin-top: 20px;
     border: 1px solid #eaeaea;
@@ -592,3 +602,15 @@ html,body {
 #copyright p {
     line-height: 18px;
 }
+.zhilu {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 0;
+    right:  -100px;
+    background: white;
+    border: 5px solid black;
+    color: green;
+    line-height: 40px;
+    z-index: 999;
+  }

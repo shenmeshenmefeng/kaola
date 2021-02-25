@@ -87,15 +87,16 @@
       <p>或者您可以先进行&nbsp;<a href="#">登录＞</a></p>
     </div>
   </div> -->
-  <div class="head">
-    <span><input type="checkbox">全选</span>
-    <span>商品</span>
-    <span>单价</span>
-    <span>数量</span>
-    <span>操作</span>
-  </div>
-  <ul class="list">
-    <!-- <li>
+  <div id="main">
+    <div class="head">
+      <span><input type="checkbox" class="check">全选</span>
+      <span>商品</span>
+      <span>单价</span>
+      <span>数量</span>
+      <span>操作</span>
+    </div>
+    <ul class="list">
+      <!-- <li>
       <input type="checkbox">
       <img src="https://img11.360buyimg.com/n7/jfs/t1/170810/11/3359/266408/600677efE384c620f/098693b4710d823d.jpg" alt="">
       <h3>Satchi沙驰女鞋新款格子布尖头拼接单鞋 细跟高跟鞋女E237729A 蓝/黑E237730A 36</h3>
@@ -111,7 +112,14 @@
       <span>2</span>
       <em>删除</em>
     </li> -->
-  </ul>
+    </ul>
+    <div class="pay">
+      <input type="checkbox" class="check">
+      <strong>全选</strong>
+      <p>总价：<span class="tot"></span></p>
+      <a href="##">去结算</a>
+    </div>
+  </div>
   <div id="new_title">
     猜你喜欢
     <span>根据你游览记录推荐的商品</span>
@@ -209,12 +217,14 @@
       var len = data.data.length;
       var domStr = '';
       var domStr1 = ''
+      
       for (var i = 0; i < len; i++) {
         for (var j = 0; j < goodsArr.length; j++) {
           if (data.data[i].id === goodsArr[j].id) {
+            var price = data.data[i].price * goodsArr[j].num
             domStr += `
-                <li>
-                  <input type="checkbox">
+                <li class="payli" value="${price}">
+                  <input type="checkbox" class="checked">
                   <img src="${data.data[i].imgurl}" alt="">
                   <h3>${data.data[i].title}</h3>
                   <p>${data.data[i].price}</p>
@@ -237,7 +247,12 @@
       };
       $('.list').html(domStr);
       $('.goods').html(domStr1);
-
+      var liLen = $('.payli').length
+      var tot = 0
+      for (var x =0;x<liLen;x++) {
+        tot += $('.payli')[x].value
+      }
+      $('.tot').text(`￥${tot}`)
     }
   </script>
   <script src="../script/jquery-1.8.3.js"></script>
