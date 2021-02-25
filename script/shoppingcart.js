@@ -33,6 +33,7 @@ $(function (){
       });
       // 删除dom结构
       $(this).parent().remove();
+      location.reload()
       // 更新本地存储的数据
       localStorage.setItem('goods',JSON.stringify(goodsArr));
       if (goodsArr.length <= 0) {
